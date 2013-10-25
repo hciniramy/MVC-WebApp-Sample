@@ -1,0 +1,13 @@
+{
+	"player1" : {
+		"name" : "Player 1",
+		"strength" : 40,
+		"speed" : 70
+		},
+	"player2" : {
+		"name" : "Player 2",
+		"strength" : 60,
+		"speed" : 10		
+		}
+}
+		

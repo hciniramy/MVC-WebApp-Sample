@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Home of our application </title>
+</head>
+<body>
+	<h1> Welcome to our Home </h1>
+	<h2>{$data.pagetitle}</h2>
+	<!-- if there is a message, we display it -->
+	{if !empty($data.message)}
+		<fieldset>
+			<p>{$data.message}</p>
+		</fieldset>
+	{/if}
+	<ul>
+	<!-- We display, using smarty functions, the list of our players -->
+	{foreach from=$data.players key=id item=player}
+		<li><a href="index.php?c=home&ac=calculate&player={$id}">{$player}</a></li>
+	{/foreach}
+	</ul>
+</body>
+</html>
